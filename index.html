@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aprendamos los colores</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    */ hemos buscado diseñar un simulador que ayude a entender el concepto de colores primarios y secundarios, dejando una lista desplegable para que el usuario escoja el color y la aplicación 
+    buscará el color resultante, devolviendo dicho resultado en la casilla correspondiente, hemos buscado interactuar con el usuario pidiendo su nombre para una experiencia más 
+    cálida, no hemos podido entender porque los contenedores no muestran el color que llama el usuario y tampoco pudimos lograr que en el cuadro de resultado, apareciera el nombre 
+    del grupo del color al tener el resultado. Primario o secundario.  
+    <body>
+        <div class="container">
+            <h1 class="title">Aprendamos los colores</h1>
+            <div class="color-container">
+                <div class="color-box" id="color1">
+                    <div class="select-container">
+                        <select id="primarySecondary1" onchange="updateColor()">
+                            <option value="">Selecciona un color</option>
+                            <option value="Rojo">Rojo</option>
+                            <option value="Amarillo">Amarillo</option>
+                            <option value="Azul">Azul</option>
+                        </select>
+                    </div>
+                    <span id="colorType1"></span>
+                </div>
+                <div class="plus-sign">+</div>
+                <div class="color-box" id="color2">
+                    <div class="select-container">
+                        <select id="primarySecondary2" onchange="updateColor()">
+                            <option value="">Selecciona un color</option>
+                            <option value="Rojo">Rojo</option>
+                            <option value="Amarillo">Amarillo</option>
+                            <option value="Azul">Azul</option>
+                        </select>
+                    </div>
+                    <span id="colorType2"></span>
+                </div>
+                <div class="equal-sign">=</div>
+                <div class="color-box" id="result">
+                    <span id="resultType"></span>
+                </div>
+            </div>
+            <div class="learn">No pares de aprender</div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>
